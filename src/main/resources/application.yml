@@ -1,0 +1,18 @@
+spring:
+  thymeleaf:
+    cache: false
+  web:
+    resources:
+      static-locations: file:${wang.filepath},classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
+  servlet:
+      multipart:
+        #设置文件上传的最大大小
+        max-file-size: 20MB
+        max-request-size: 200MB
+
+wang:
+  #windows下用这个
+  filepath: F:\TEMP\Upload
+  #linux
+  #filepath: /vdb1/xxx/vue/resources
+  urlpath: /
